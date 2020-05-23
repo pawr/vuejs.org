@@ -104,6 +104,13 @@ If you would like to also toggle a class in the list conditionally, you can do i
 ``` html
 <div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
 ```
+``` js
+data: {
+  isActive: true,
+  activeClass: 'active',
+  errorClass: 'text-danger'
+}
+```
 
 This will always apply `errorClass`, but will only apply `activeClass` when `isActive` is truthy.
 
